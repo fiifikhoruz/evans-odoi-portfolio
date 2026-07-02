@@ -30,13 +30,13 @@ export const podcast = {
       id: '3lasJJsfNXw',
       title: 'How to Prepare for Trial',
       views: '12K views · 20 min',
-      note: 'The whole pre-trial process, from case theory to the morning of',
+      note: 'The whole pre-trial process, from case theory to the morning of trial',
     },
     {
       id: 'NHwt-YtYFSc',
       title: "Ghana's Top Online Legal Educators",
       views: '4.7K views · 21 min',
-      note: 'The people making Ghanaian law make sense online',
+      note: 'The people teaching Ghanaian law online, and doing it well',
     },
   ],
 }

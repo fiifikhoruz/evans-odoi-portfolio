@@ -2,25 +2,17 @@ import { presentations } from '../../data/presentations'
 import { Section, SectionHeading } from '../ui/Section'
 import Reveal from '../ui/Reveal'
 
-function SlidePreview({ title }) {
-  // Clean typographic slide preview, no external assets required.
+function DeckEmbed({ embed, title }) {
+  // Live Canva embed: the real deck, flippable in place.
   return (
     <div className="theme-smooth relative aspect-[16/9] w-full overflow-hidden rounded-lg border border-line/10 bg-raised">
-      <div className="absolute inset-0 p-5">
-        <span className="block h-1 w-8 rounded-full bg-accent/70" aria-hidden="true" />
-        <p className="mt-3 line-clamp-2 max-w-[85%] text-sm font-semibold leading-snug text-ink">{title}</p>
-        <div className="mt-3 space-y-1.5" aria-hidden="true">
-          <span className="block h-1.5 w-3/4 rounded-full bg-line/10" />
-          <span className="block h-1.5 w-1/2 rounded-full bg-line/10" />
-          <span className="block h-1.5 w-2/3 rounded-full bg-line/10" />
-        </div>
-      </div>
-      <span
-        aria-hidden="true"
-        className="absolute bottom-3 right-4 text-[10px] font-medium uppercase tracking-widest text-faint"
-      >
-        Canva deck
-      </span>
+      <iframe
+        src={embed}
+        title={title}
+        loading="lazy"
+        allowFullScreen
+        className="absolute inset-0 h-full w-full border-0"
+      />
     </div>
   )
 }
@@ -41,7 +33,7 @@ export default function Presentations() {
             as="article"
             className="theme-smooth group rounded-xl border border-line/10 bg-surface p-5 transition-shadow duration-150 hover:shadow-lg hover:shadow-black/5"
           >
-            <SlidePreview title={deck.title} />
+            <DeckEmbed embed={deck.embed} title={deck.title} />
             <div className="mt-4 flex items-start justify-between gap-4">
               <div>
                 <p className="text-xs font-medium text-accent">{deck.tag}</p>

@@ -30,7 +30,7 @@ export default function Projects() {
       <SectionHeading
         kicker="Selected work"
         title="Products shipped, not promised."
-        lede="Six products, all live in production right now. The screenshots aren\u2019t mockups; they render fresh from each site as you read this. Open a card for the full story."
+        lede="Six products, all live in production right now. The screenshots aren’t mockups; they render fresh from each site as you read this. Open a card for the full story."
       />
 
       <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
