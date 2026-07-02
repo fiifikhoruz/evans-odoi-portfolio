@@ -36,12 +36,12 @@ export const capabilities = [
   },
   {
     title: 'Marketing Systems',
-    text: 'Funnels that connect content to money: bookings, WhatsApp orders, waitlists.',
+    text: 'Funnels that connect content to revenue: bookings, WhatsApp orders, waitlists.',
     example: 'AB Card Games turns Instagram traffic into WhatsApp orders.',
   },
   {
     title: 'Communication Strategy',
-    text: 'Positioning and story structure for products, brands, and rooms full of skeptics.',
+    text: 'Positioning and story structure for products, brands, and boardrooms.',
     example: 'Four client decks, from investor proposals to clinical case studies.',
   },
 ]

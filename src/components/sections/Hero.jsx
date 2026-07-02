@@ -28,7 +28,7 @@ export default function Hero() {
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
             I&rsquo;m Evans Odoi, an AI product builder and communication professional in Accra.
             I use AI, design, and software engineering to ship digital products, websites, and
-            communication systems. Six of them are live on this page; click through and check.
+            communication systems. Six live projects are below, from a festival platform to hotel software.
           </p>
         </Reveal>
         <Reveal delay={120}>

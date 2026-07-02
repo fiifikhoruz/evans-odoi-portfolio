@@ -23,7 +23,7 @@ export default function Presentations() {
       <SectionHeading
         kicker="Presentations"
         title="Complex ideas, presented cleanly."
-        lede="Client and business decks built with Canva AI, from investor proposals to clinical case studies. The job is always the same: take something dense and make a room understand it."
+        lede="Client and business decks built with Canva AI, from investor proposals to clinical case studies. The job is always the same: take dense material and make a room understand it."
       />
       <div className="grid gap-6 sm:grid-cols-2">
         {presentations.map((deck, i) => (

@@ -9,7 +9,7 @@ export default function Capabilities() {
       <SectionHeading
         kicker="AI capabilities"
         title="A structured capability system."
-        lede="Not a skills list. Every capability here comes with proof: something real that shipped."
+        lede="Not a skills list. Every capability here comes with proof: a real project that shipped."
       />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {capabilities.map((c, i) => (

@@ -15,7 +15,7 @@ export const presentations = [
   },
   {
     title: 'Heart Disease: An Overview',
-    context: 'Health education deck that turns cardiology material into something a general audience can actually use.',
+    context: 'Health education deck that makes cardiology material clear to a general audience.',
     url: 'https://canva.link/tf67hnzgh8ton14',
     embed: 'https://www.canva.com/design/DAG2-X8SRww/I8fqgOeyUCk7lWWWnzf-sA/view?embed',
     tag: 'Health Education',

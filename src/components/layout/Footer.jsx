@@ -7,10 +7,10 @@ export default function Footer() {
       <Section id="contact" className="pb-24 pt-4">
         <Reveal className="theme-smooth rounded-2xl border border-line/10 bg-surface p-8 text-center sm:p-14">
           <h2 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-            Have something worth building?
+            Have a project worth building?
           </h2>
           <p className="mx-auto mt-4 max-w-md text-base leading-relaxed text-muted">
-            I work with founders, brands, and teams who want the thing actually shipped, and shipped well.
+            I work with founders, brands, and teams who want their ideas shipped, and shipped well.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
