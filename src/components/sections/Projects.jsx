@@ -1,117 +1,76 @@
+import { useState } from 'react'
 import { projects } from '../../data/projects'
 import { Section, SectionHeading } from '../ui/Section'
-import { BrowserFrame, PhoneFrame } from '../ui/DeviceFrames'
 import Reveal from '../ui/Reveal'
+import ProjectPanel from './ProjectPanel'
 
-function Meta({ label, children }) {
+function Thumb({ p }) {
   return (
-    <div>
-      <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-faint">{label}</h4>
-      <p className="mt-1.5 text-sm leading-relaxed text-muted">{children}</p>
-    </div>
-  )
-}
-
-function Chips({ label, items }) {
-  return (
-    <div>
-      <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-faint">{label}</h4>
-      <ul className="mt-2 flex flex-wrap gap-1.5">
-        {items.map((t) => (
-          <li
-            key={t}
-            className="theme-smooth rounded-md border border-line/10 bg-raised px-2 py-1 text-xs text-muted"
-          >
-            {t}
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
-}
-
-function ProjectCard({ p, index }) {
-  const flip = index % 2 === 1
-  return (
-    <Reveal
-      as="article"
-      className="theme-smooth overflow-hidden rounded-2xl border border-line/10 bg-surface transition-shadow duration-150 hover:shadow-lg hover:shadow-black/5"
-    >
-      <div className={`grid gap-8 p-6 sm:p-8 lg:grid-cols-2 lg:gap-12 ${flip ? 'lg:[&>div:first-child]:order-2' : ''}`}>
-        {/* Mockups */}
-        <div className="relative">
-          <BrowserFrame src={p.desktopShot} fallback={p.fallback} alt={`${p.name} — desktop view`} url={p.url} />
-          <div className="absolute -bottom-4 -right-2 hidden w-[30%] sm:block">
-            <PhoneFrame src={p.mobileShot} fallback={p.fallback} alt={`${p.name} — mobile view`} />
-          </div>
-        </div>
-
-        {/* Details */}
-        <div className="flex flex-col">
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">{p.category}</p>
-          <h3 className="mt-2 text-xl font-semibold tracking-tight text-ink sm:text-2xl">{p.name}</h3>
-          <p className="mt-1 text-sm text-muted">{p.tagline}</p>
-
-          <div className="mt-6 space-y-5">
-            <Meta label="Problem">{p.problem}</Meta>
-            <Meta label="Solution">{p.solution}</Meta>
-            <Meta label="My role">{p.role}</Meta>
-            <div className="grid gap-5 sm:grid-cols-2">
-              <Chips label="Tech stack" items={p.stack} />
-              <Chips label="AI tools" items={p.aiTools} />
-            </div>
-            <Meta label="Outcome">{p.outcome}</Meta>
-          </div>
-
-          <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-line/10 pt-5">
-            {p.highlights.map((h) => (
-              <span key={h} className="inline-flex items-center gap-1.5 text-xs text-muted">
-                <span className="h-1 w-1 rounded-full bg-accent" aria-hidden="true" />
-                {h}
-              </span>
-            ))}
-          </div>
-
-          <div className="mt-6 flex gap-3">
-            <a
-              href={p.url}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
-            >
-              Visit live site
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M7 17 17 7M8 7h9v9" />
-              </svg>
-            </a>
-            <a
-              href="https://github.com/fiifikhoruz"
-              target="_blank"
-              rel="noreferrer"
-              className="theme-smooth inline-flex items-center rounded-lg border border-line/15 bg-raised px-4 py-2 text-sm text-muted transition-colors hover:text-ink"
-            >
-              GitHub
-            </a>
-          </div>
-        </div>
+    <div className="theme-smooth overflow-hidden rounded-lg border border-line/10 bg-raised">
+      <div className="aspect-[16/10] w-full overflow-hidden">
+        <img
+          src={p.desktopShot}
+          alt={`${p.name} — live screenshot`}
+          loading="lazy"
+          onError={(e) => {
+            if (p.fallback && e.currentTarget.src !== p.fallback) e.currentTarget.src = p.fallback
+          }}
+          className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
+        />
       </div>
-    </Reveal>
+    </div>
   )
 }
 
 export default function Projects() {
+  const [open, setOpen] = useState(null)
+
   return (
     <Section id="work" className="py-20">
       <SectionHeading
         kicker="Selected work"
         title="Products shipped, not promised."
-        lede="Six live products — festivals, SaaS, e-commerce, AI apps, and platforms — each solving a real problem for real users. Screenshots are rendered live from production."
+        lede="Six live products — festivals, SaaS, e-commerce, AI apps, and platforms. Screenshots render live from production. Open any card for the full case study."
       />
-      <div className="space-y-10">
+
+      <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p, i) => (
-          <ProjectCard key={p.id} p={p} index={i} />
+          <li key={p.id} className="sticky sm:static" style={{ top: `${84 + i * 10}px` }}>
+            <Reveal delay={(i % 3) * 40}>
+              <button
+                type="button"
+                onClick={() => setOpen(i)}
+                aria-haspopup="dialog"
+                className="theme-smooth group w-full rounded-xl border border-line/10 bg-surface p-4 text-left shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:border-line/25 hover:shadow-lg hover:shadow-black/10"
+              >
+                <Thumb p={p} />
+                <div className="mt-4 flex items-start justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-accent">{p.category}</p>
+                    <h3 className="mt-1 truncate text-base font-semibold text-ink">{p.name}</h3>
+                    <p className="mt-0.5 line-clamp-2 text-sm leading-snug text-muted">{p.tagline}</p>
+                  </div>
+                  <span
+                    aria-hidden="true"
+                    className="theme-smooth mt-1 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line/10 bg-raised text-muted transition-transform duration-150 group-hover:translate-x-0.5 group-hover:text-ink"
+                  >
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14m-6-6 6 6-6 6" /></svg>
+                  </span>
+                </div>
+              </button>
+            </Reveal>
+          </li>
         ))}
-      </div>
+      </ul>
+
+      {open !== null && (
+        <ProjectPanel
+          projects={projects}
+          index={open}
+          onClose={() => setOpen(null)}
+          onNav={(d) => setOpen((cur) => (cur + d + projects.length) % projects.length)}
+        />
+      )}
     </Section>
   )
 }
