@@ -6,8 +6,7 @@ import Podcast from './components/sections/Podcast'
 import Presentations from './components/sections/Presentations'
 import GitHubSection from './components/sections/GitHubSection'
 import Capabilities from './components/sections/Capabilities'
-import Workflow from './components/sections/Workflow'
-import Stack from './components/sections/Stack'
+import System from './components/sections/System'
 import Philosophy from './components/sections/Philosophy'
 import Footer from './components/layout/Footer'
 
@@ -30,8 +29,7 @@ export default function App() {
         <Presentations />
         <GitHubSection />
         <Capabilities />
-        <Workflow />
-        <Stack />
+        <System />
         <Philosophy />
       </main>
       <Footer />

@@ -85,3 +85,30 @@ body {
 @keyframes shimmer {
   to { background-position: -200% 0; }
 }
+
+/* Cursor spotlight (dark mode) and subtle 3D tilt */
+.spot-card { position: relative; }
+.spot-layer {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 200ms ease;
+  background: radial-gradient(
+    240px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+    rgb(var(--c-accent) / 0.09),
+    transparent 65%
+  );
+}
+.dark .spot-card:hover .spot-layer { opacity: 1; }
+
+.tilt-card {
+  transform: perspective(900px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  transition: transform 160ms ease;
+  will-change: transform;
+}
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .tilt-card { transform: none !important; }
+  .spot-layer { display: none; }
+}
