@@ -12,20 +12,12 @@ export default function Philosophy() {
         <div className="mt-6 space-y-4 text-base leading-relaxed text-muted">
           <p>
             My work sits where communication, design, engineering, and product thinking meet.
-            Each one keeps the others honest. Communication decides what a product should say;
-            design decides how it should feel; engineering decides whether it holds up; product
-            thinking decides whether it should exist at all.
+            AI removes the busywork; judgement and taste stay human. Every project on this page,
+            from a festival platform to hotel software, came out of that method.
           </p>
           <p>
-            AI changes the economics of that work, not the standard. A first draft in minutes
-            instead of days. Research in an afternoon instead of a month. The busywork disappears,
-            so judgement and taste get more attention rather than less. The tools are fast; the
-            bar stays where it was.
-          </p>
-          <p>
-            Everything on this page came out of that method. A festival platform, a hotel system,
-            a card game company, a journal for lawyers. Different industries, same approach: use
-            AI for speed, and never let it stand in for clarity or craft.
+            The words follow the same rule. I write in a tone borrowed from Monzo: plain language,
+            warm and direct, simple without being dumbed down.
           </p>
         </div>
       </Reveal>

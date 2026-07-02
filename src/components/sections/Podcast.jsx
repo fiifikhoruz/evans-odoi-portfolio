@@ -6,7 +6,7 @@ function Episode({ ep, featured }) {
   return (
     <Reveal
       as="article"
-      className="theme-smooth overflow-hidden rounded-xl border border-line/10 bg-surface transition-shadow duration-150 hover:shadow-lg hover:shadow-black/5"
+      className="theme-smooth min-w-[82%] shrink-0 snap-start overflow-hidden rounded-xl border border-line/10 bg-surface transition-shadow duration-150 hover:shadow-lg hover:shadow-black/5 sm:min-w-[55%] md:min-w-0 md:shrink"
     >
       <div className="aspect-video w-full bg-raised">
         {featured ? (
@@ -45,7 +45,7 @@ function Episode({ ep, featured }) {
       <div className="p-5">
         <p className="text-xs font-medium text-accent">{ep.views}</p>
         <h3 className="mt-1.5 text-sm font-semibold leading-snug text-ink">{ep.title}</h3>
-        <p className="mt-1.5 text-xs leading-relaxed text-muted">{ep.note}</p>
+        <p className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-muted">{ep.note}</p>
       </div>
     </Reveal>
   )
@@ -73,7 +73,7 @@ export default function Podcast() {
         ))}
       </Reveal>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 md:grid md:snap-none md:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0">
         {podcast.episodes.map((ep, i) => (
           <Episode key={ep.id} ep={ep} featured={i === 0} />
         ))}
@@ -87,7 +87,7 @@ export default function Podcast() {
           {podcast.aiProduction.map((item) => (
             <div key={item.title}>
               <h4 className="text-sm font-semibold text-ink">{item.title}</h4>
-              <p className="mt-1.5 text-sm leading-relaxed text-muted">{item.text}</p>
+              <p className="mt-1.5 line-clamp-2 text-sm leading-relaxed text-muted sm:line-clamp-none">{item.text}</p>
             </div>
           ))}
         </div>

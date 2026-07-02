@@ -25,20 +25,20 @@ export default function Presentations() {
         title="Complex ideas, presented cleanly."
         lede="Client and business decks built with Canva AI, from investor proposals to clinical case studies. The job is always the same: take dense material and make a room understand it."
       />
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 sm:grid sm:snap-none sm:grid-cols-2 sm:gap-6 sm:overflow-visible sm:pb-0">
         {presentations.map((deck, i) => (
           <Reveal
             key={deck.url}
             delay={i * 40}
             as="article"
-            className="theme-smooth group rounded-xl border border-line/10 bg-surface p-5 transition-shadow duration-150 hover:shadow-lg hover:shadow-black/5"
+            className="theme-smooth group min-w-[85%] shrink-0 snap-start rounded-xl border border-line/10 bg-surface p-5 transition-shadow duration-150 hover:shadow-lg hover:shadow-black/5 sm:min-w-0 sm:shrink"
           >
             <DeckEmbed embed={deck.embed} title={deck.title} />
             <div className="mt-4 flex items-start justify-between gap-4">
               <div>
                 <p className="text-xs font-medium text-accent">{deck.tag}</p>
                 <h3 className="mt-1 text-sm font-semibold text-ink">{deck.title}</h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-muted">{deck.context}</p>
+                <p className="mt-1.5 line-clamp-2 text-sm leading-relaxed text-muted sm:line-clamp-none">{deck.context}</p>
               </div>
             </div>
             <a
