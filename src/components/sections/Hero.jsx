@@ -10,7 +10,11 @@ const proof = [
 
 export default function Hero() {
   return (
-    <section id="top" className="px-5 pb-20 pt-20 sm:px-8 sm:pt-28">
+    <section id="top" className="relative overflow-hidden px-5 pb-20 pt-20 sm:px-8 sm:pt-28">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-0 h-[440px] bg-[radial-gradient(640px_circle_at_28%_-12%,rgb(var(--c-accent)/0.09),transparent_62%)]"
+      />
       <div className="mx-auto max-w-content">
         <Reveal>
           <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-line/10 bg-surface px-3.5 py-1.5 text-xs font-medium text-muted theme-smooth">
@@ -36,7 +40,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="#work"
-              className="rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+              className="rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-onaccent transition-opacity hover:opacity-90"
             >
               See the work
             </a>

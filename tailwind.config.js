@@ -12,6 +12,7 @@ export default {
         muted: 'rgb(var(--c-muted) / <alpha-value>)',
         faint: 'rgb(var(--c-faint) / <alpha-value>)',
         accent: 'rgb(var(--c-accent) / <alpha-value>)',
+        onaccent: 'rgb(var(--c-onaccent) / <alpha-value>)',
         line: 'rgb(var(--c-line) / <alpha-value>)',
       },
       fontFamily: {
