@@ -20,9 +20,9 @@ export default function Hero() {
         </Reveal>
         <Reveal delay={40}>
           <h1 className="max-w-3xl text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl md:text-6xl">
-            Real products. Real systems.
+            Real products.
             <br />
-            <span className="text-muted">Built with AI, shipped for business.</span>
+            <span className="text-muted">Built with AI for business.</span>
           </h1>
         </Reveal>
         <Reveal delay={80}>

@@ -2,12 +2,7 @@ import { useState } from 'react'
 
 const links = [
   { href: '#work', label: 'Work' },
-  { href: '#podcast', label: 'Podcast' },
-  { href: '#presentations', label: 'Decks' },
-  { href: '#github', label: 'GitHub' },
   { href: '#capabilities', label: 'Capabilities' },
-  { href: '#process', label: 'Process' },
-  { href: '#philosophy', label: 'Philosophy' },
 ]
 
 function ThemeToggle({ theme, toggle }) {

@@ -3,12 +3,7 @@ import { useTheme } from './hooks/useTheme'
 import Navbar from './components/layout/Navbar'
 import Hero from './components/sections/Hero'
 import Projects from './components/sections/Projects'
-import Podcast from './components/sections/Podcast'
-import Presentations from './components/sections/Presentations'
-import GitHubSection from './components/sections/GitHubSection'
 import Capabilities from './components/sections/Capabilities'
-import System from './components/sections/System'
-import Philosophy from './components/sections/Philosophy'
 import Footer from './components/layout/Footer'
 
 export default function App() {
@@ -41,12 +36,7 @@ export default function App() {
       <main>
         <Hero />
         <Projects />
-        <Podcast />
-        <Presentations />
-        <GitHubSection />
         <Capabilities />
-        <System />
-        <Philosophy />
       </main>
       <Footer />
     </>
