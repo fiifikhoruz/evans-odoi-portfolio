@@ -1,4 +1,5 @@
 import Reveal from '../ui/Reveal'
+import { projects } from '../../data/projects'
 
 const proof = [
   { value: '6', label: 'Products live in production' },
@@ -28,7 +29,7 @@ export default function Hero() {
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
             I&rsquo;m Evans Odoi, an AI product builder and communication professional in Accra.
             I use AI, design, and software engineering to ship digital products, websites, and
-            communication systems. Six live projects are below, from a festival platform to hotel software.
+            communication systems.
           </p>
         </Reveal>
         <Reveal delay={120}>
@@ -46,6 +47,24 @@ export default function Hero() {
               Get in touch
             </a>
           </div>
+        </Reveal>
+        <Reveal delay={140}>
+          <a href="#work" className="group mt-8 inline-flex items-center gap-3">
+            <span className="flex -space-x-2">
+              {projects.map((p) => (
+                <img
+                  key={p.id}
+                  src={p.mobileShot}
+                  alt=""
+                  loading="lazy"
+                  className="theme-smooth h-9 w-9 rounded-full border-2 border-bg bg-raised object-cover object-top"
+                />
+              ))}
+            </span>
+            <span className="text-sm text-muted transition-colors duration-150 group-hover:text-ink">
+              6 live projects, see them all →
+            </span>
+          </a>
         </Reveal>
         <Reveal delay={160}>
           <dl className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line/10 bg-line/10 sm:grid-cols-4">

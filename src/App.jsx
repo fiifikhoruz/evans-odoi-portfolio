@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useTheme } from './hooks/useTheme'
 import Navbar from './components/layout/Navbar'
 import Hero from './components/sections/Hero'
@@ -12,6 +13,21 @@ import Footer from './components/layout/Footer'
 
 export default function App() {
   const { theme, toggle } = useTheme()
+
+  useEffect(() => {
+    const onClick = (e) => {
+      const a = e.target.closest('a[href^="#"]')
+      if (!a) return
+      const el = document.querySelector(a.getAttribute('href'))
+      if (!el) return
+      e.preventDefault()
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' })
+      history.pushState(null, '', a.getAttribute('href'))
+    }
+    document.addEventListener('click', onClick)
+    return () => document.removeEventListener('click', onClick)
+  }, [])
 
   return (
     <>
