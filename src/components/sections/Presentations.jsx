@@ -3,7 +3,7 @@ import { Section, SectionHeading } from '../ui/Section'
 import Reveal from '../ui/Reveal'
 
 function SlidePreview({ title }) {
-  // Clean typographic slide preview — no external assets required.
+  // Clean typographic slide preview, no external assets required.
   return (
     <div className="theme-smooth relative aspect-[16/9] w-full overflow-hidden rounded-lg border border-line/10 bg-raised">
       <div className="absolute inset-0 p-5">
@@ -31,7 +31,7 @@ export default function Presentations() {
       <SectionHeading
         kicker="Presentations"
         title="Complex ideas, presented cleanly."
-        lede="Client and business decks designed with Canva AI — from investor proposals to clinical case studies. Structure and story first, decoration last."
+        lede="Client and business decks built with Canva AI, from investor proposals to clinical case studies. The job is always the same: take something dense and make a room understand it."
       />
       <div className="grid gap-6 sm:grid-cols-2">
         {presentations.map((deck, i) => (

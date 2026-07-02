@@ -16,7 +16,7 @@ export default function GitHubSection() {
       <SectionHeading
         kicker="Code"
         title="The engineering behind the products."
-        lede={`github.com/${github.username} — ${github.repoCount} public repositories spanning product builds, business tooling, and open-source exploration.`}
+        lede={`github.com/${github.username}: ${github.repoCount} public repositories covering product builds, business tooling, and open-source tinkering.`}
       />
 
       <div className="grid gap-6 lg:grid-cols-[1fr_1.6fr]">
@@ -25,7 +25,7 @@ export default function GitHubSection() {
           <div className="flex items-center gap-4">
             <img
               src={github.avatar}
-              alt="Evans Odoi — GitHub avatar"
+              alt="Evans Odoi, GitHub avatar"
               loading="lazy"
               className="h-14 w-14 rounded-full border border-line/10"
             />

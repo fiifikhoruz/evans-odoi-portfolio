@@ -10,7 +10,7 @@ function Thumb({ p }) {
       <div className="aspect-[16/10] w-full overflow-hidden">
         <img
           src={p.desktopShot}
-          alt={`${p.name} — live screenshot`}
+          alt={`${p.name}, live screenshot`}
           loading="lazy"
           onError={(e) => {
             if (p.fallback && e.currentTarget.src !== p.fallback) e.currentTarget.src = p.fallback
@@ -30,7 +30,7 @@ export default function Projects() {
       <SectionHeading
         kicker="Selected work"
         title="Products shipped, not promised."
-        lede="Six live products — festivals, SaaS, e-commerce, AI apps, and platforms. Screenshots render live from production. Open any card for the full case study."
+        lede="Six products, all live in production right now. The screenshots aren\u2019t mockups; they render fresh from each site as you read this. Open a card for the full story."
       />
 
       <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

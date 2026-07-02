@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* ---------------------------------------------
-   Design tokens — dark mode first
+   Design tokens: dark mode first
    --------------------------------------------- */
 :root {
   /* light (secondary) */

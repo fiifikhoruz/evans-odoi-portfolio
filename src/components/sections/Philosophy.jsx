@@ -11,22 +11,21 @@ export default function Philosophy() {
         </blockquote>
         <div className="mt-6 space-y-4 text-base leading-relaxed text-muted">
           <p>
-            My work sits at the intersection of communication, design, engineering, and product
-            thinking. Each discipline sharpens the others: communication decides what a product
-            should say, design decides how it should feel, engineering decides how it holds up,
-            and product thinking decides whether it should exist at all.
+            My work sits where communication, design, engineering, and product thinking meet.
+            Each one keeps the others honest. Communication decides what a product should say;
+            design decides how it should feel; engineering decides whether it holds up; product
+            thinking decides whether it should exist at all.
           </p>
           <p>
-            AI changes the economics of that work, not its standards. It reduces friction between
-            an idea and its first draft, compresses weeks of research into an afternoon, and takes
-            the busywork out of building — so that judgement, taste, and editorial care get more
-            attention, not less. The tools move fast; the bar stays where it was.
+            AI changes the economics of that work, not the standard. A first draft in minutes
+            instead of days. Research in an afternoon instead of a month. The busywork disappears,
+            so judgement and taste get more attention rather than less. The tools are fast; the
+            bar stays where it was.
           </p>
           <p>
-            That is the through-line in everything on this page. A festival platform, a hotel
-            management system, a card game brand, a journaling app for lawyers — different
-            industries, one method: use AI to increase speed and execution quality, and never let
-            it substitute for clarity or craft.
+            Everything on this page came out of that method. A festival platform, a hotel system,
+            a card game company, a journal for lawyers. Different industries, same approach: use
+            AI for speed, and never let it stand in for clarity or craft.
           </p>
         </div>
       </Reveal>

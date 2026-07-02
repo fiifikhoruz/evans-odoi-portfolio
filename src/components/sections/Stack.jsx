@@ -14,7 +14,7 @@ export default function Stack() {
       <SectionHeading
         kicker="AI stack"
         title="Tools used professionally."
-        lede="The working stack behind every project — AI assistants, frameworks, and platforms."
+        lede="The working stack behind every project on this page. Nothing aspirational; these are the tools in daily use."
       />
       <Reveal>
         <ul className="grid gap-px overflow-hidden rounded-xl border border-line/10 bg-line/10 sm:grid-cols-2 lg:grid-cols-5">

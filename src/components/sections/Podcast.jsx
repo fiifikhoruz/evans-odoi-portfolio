@@ -28,7 +28,7 @@ function Episode({ ep, featured }) {
           >
             <img
               src={`https://i.ytimg.com/vi/${ep.id}/hqdefault.jpg`}
-              alt={`Thumbnail — ${ep.title}`}
+              alt={`Thumbnail: ${ep.title}`}
               loading="lazy"
               className="h-full w-full object-cover"
             />
@@ -81,7 +81,7 @@ export default function Podcast() {
 
       <Reveal className="mt-10 rounded-xl border border-line/10 bg-surface p-6 sm:p-8 theme-smooth">
         <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-faint">
-          AI-assisted production
+          How AI runs the production
         </h3>
         <div className="mt-5 grid gap-6 sm:grid-cols-3">
           {podcast.aiProduction.map((item) => (

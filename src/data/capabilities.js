@@ -1,48 +1,48 @@
 export const capabilities = [
   {
     title: 'AI Product Development',
-    text: 'Taking products from idea to production with AI in the loop at every stage — scoping, building, testing, shipping.',
-    example: 'Aurum PMS: a full hotel management SaaS designed, built, and launched solo.',
+    text: 'Taking a product from idea to production with AI in the loop the whole way: scoping, building, testing, shipping.',
+    example: 'Aurum PMS: a hotel management SaaS designed, built, and launched solo.',
   },
   {
     title: 'Prompt Engineering',
-    text: 'Designing structured prompts and multi-step AI workflows that produce reliable, production-quality output.',
-    example: 'Diary for Lawyers: profession-aware GPT-4 reflection prompts tuned for legal journaling.',
+    text: 'Structured prompts and multi-step workflows that produce output you can actually ship.',
+    example: 'Diary for Lawyers: GPT-4 reflection prompts tuned for legal journaling.',
   },
   {
     title: 'Website Building with AI',
-    text: 'Shipping complete, performant marketing sites and web apps in days, not months.',
-    example: 'AFROSON1C X: an international festival platform with three live application funnels.',
+    text: 'Complete, fast marketing sites and web apps in days rather than months.',
+    example: 'AFROSON1C X: a festival platform with three live application funnels.',
   },
   {
     title: 'UX / UI Design',
-    text: 'Interface systems that stay calm under content pressure — hierarchy, spacing, and restraint.',
-    example: 'Small Giants: a nine-section editorial product designed around a single narrative.',
+    text: 'Interfaces that stay calm under heavy content. Hierarchy, spacing, restraint.',
+    example: 'Small Giants: a nine-section editorial site built around one narrative.',
   },
   {
     title: 'Branding Systems',
-    text: 'Identity, voice, and visual language that hold together across product, packaging, and social.',
-    example: 'AB Card Games: a brand covered by national press within weeks of launch.',
+    text: 'Identity, voice, and visuals that hold together from packaging to product to social.',
+    example: 'AB Card Games: a brand in the national press within weeks of launch.',
   },
   {
     title: 'AI Content Creation',
-    text: 'Research-backed content pipelines where AI drafts and humans make the editorial calls.',
-    example: 'Podcast episode packaging: titles, descriptions, and platform copy for 83 videos.',
+    text: 'Research-backed content pipelines where AI drafts and a human makes the call.',
+    example: "Titles, descriptions, and platform copy for 83 podcast videos.",
   },
   {
     title: 'AI Video Production',
-    text: 'Repurposing long-form recordings into shorts, audiograms, and platform-native cuts.',
-    example: 'Diary of a Ghanaian Lawyer: one recording becomes YouTube, Shorts, and social formats.',
+    text: 'Long recordings cut into shorts, audiograms, and platform-native formats.',
+    example: 'One podcast recording becomes YouTube, Shorts, and social, every week.',
   },
   {
     title: 'Marketing Systems',
-    text: 'Funnels that connect content to conversion — booking flows, WhatsApp commerce, waitlists.',
-    example: 'AB Card Games: social traffic converts to orders through a WhatsApp commerce flow.',
+    text: 'Funnels that connect content to money: bookings, WhatsApp orders, waitlists.',
+    example: 'AB Card Games turns Instagram traffic into WhatsApp orders.',
   },
   {
     title: 'Communication Strategy',
-    text: 'Positioning, messaging, and story structure for products, brands, and presentations.',
-    example: 'Four client decks — from investor proposals to clinical case studies — built for clarity.',
+    text: 'Positioning and story structure for products, brands, and rooms full of skeptics.',
+    example: 'Four client decks, from investor proposals to clinical case studies.',
   },
 ]
 
@@ -85,7 +85,7 @@ export const github = {
     { name: 'aurum-marketing', lang: 'JavaScript', desc: 'Marketing site for Aurum PMS' },
     { name: 'heavens-diagnostic', lang: 'TypeScript', desc: 'Diagnostics product build' },
     { name: 'ab-card-games', lang: 'TypeScript', desc: 'Inventory system for AB Card Games' },
-    { name: 'docuseal', lang: 'Ruby', desc: 'Fork — open-source DocuSign alternative' },
+    { name: 'docuseal', lang: 'Ruby', desc: 'Fork of the open-source DocuSign alternative' },
   ],
-  focus: ['TypeScript & React products', 'Vue experiments', 'Business tooling & inventory systems', 'Open-source exploration'],
+  focus: ['TypeScript & React products', 'Vue experiments', 'Business tooling & inventory systems', 'Open-source tinkering'],
 }

@@ -10,7 +10,7 @@ export default function Footer() {
             Have something worth building?
           </h2>
           <p className="mx-auto mt-4 max-w-md text-base leading-relaxed text-muted">
-            I work with founders, brands, and teams who want products shipped with speed and care.
+            I work with founders, brands, and teams who want the thing actually shipped, and shipped well.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
@@ -34,7 +34,7 @@ export default function Footer() {
       <footer className="theme-smooth border-t border-line/10 px-5 py-8 sm:px-8">
         <div className="mx-auto flex max-w-content flex-col items-center justify-between gap-3 text-xs text-faint sm:flex-row">
           <p>© {new Date().getFullYear()} Evans Odoi · Accra, Ghana</p>
-          <p>Designed and built with AI in the loop — judgement included.</p>
+          <p>Designed and built with AI in the loop. Judgement included.</p>
         </div>
       </footer>
     </>

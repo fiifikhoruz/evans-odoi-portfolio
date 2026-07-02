@@ -1,5 +1,5 @@
-// Live screenshot service (WordPress mshots) — renders a real screenshot of
-// each production URL. Falls back to the site's own OG image if unavailable.
+// Live screenshot service (WordPress mshots). Renders a real screenshot of
+// each production URL, with the site's own OG image as fallback.
 const shot = (url) => `https://s0.wp.com/mshots/v1/${encodeURIComponent(url)}?w=1200`
 const shotMobile = (url) => `https://s0.wp.com/mshots/v1/${encodeURIComponent(url)}?vpw=420&vph=880&w=480`
 
@@ -14,14 +14,14 @@ export const projects = [
     mobileShot: shotMobile('https://www.afroson1cx.com'),
     fallback: 'https://www.afroson1cx.com/opengraph-image',
     problem:
-      'An international music festival and industry conference in Accra needed a digital presence credible enough for global partners — labels, platforms, and brands — while handling artist applications, partner enquiries, and edition-to-edition storytelling.',
+      "AFROSON1C X connects West African artists with the global music business. It needed a site that could hold its own in front of Virgin Music and SXSW London, take applications from artists in Accra, and carry the story of a festival that sold out its first edition.",
     solution:
-      'A fast, editorial marketing platform built around the festival’s narrative: editions, highlights, partner showcase, and three separate application funnels for artists, partners, and attendees.',
-    role: 'Product builder & digital experience designer — architecture, design system, build, and deployment.',
+      "An editorial marketing platform built around the festival's story: past editions in pictures, a partner wall, and three separate application funnels for artists, partners, and attendees. Each one feeds a different pipeline.",
+    role: 'I designed and built the digital experience: architecture, design system, build, and deployment.',
     stack: ['Next.js', 'React', 'Tailwind CSS', 'Supabase Storage', 'Vercel'],
     aiTools: ['Claude', 'ChatGPT'],
     outcome:
-      'Supports a festival with a sold-out 2,000-capacity debut and partners including Virgin Music Group, EMPIRE, SXSW London, and Reeperbahn Festival. Edition 02 applications now run through the site.',
+      'The site now carries a festival with a sold-out 2,000-person debut and partners including Virgin Music Group, EMPIRE, SXSW London, and Reeperbahn Festival. Applications for Edition 02 run through it today.',
     highlights: ['Sold-out Edition 01', '14+ global partners', '3 application funnels'],
   },
   {
@@ -34,15 +34,15 @@ export const projects = [
     mobileShot: shotMobile('https://www.aurumpms.com'),
     fallback: null,
     problem:
-      'Independent hotels in Ghana still run front desks on paper and spreadsheets — bookings collide, housekeeping status is guesswork, and owners have no clean view of daily revenue.',
+      "Most independent hotels in Ghana still run the front desk on paper. Bookings collide, housekeeping is guesswork, and the owner finds out what the day earned long after it's over.",
     solution:
-      'A full property management system: room board, guest bookings with check-in/check-out, staff permission levels, and end-of-day revenue reports in Ghana cedis — plus a marketing site with an interactive product demo and walkthrough booking.',
-    role: 'Founder & product builder — product design, engineering, and go-to-market.',
+      'Aurum is a full property management system: a live room board, guest check-in and check-out, staff roles with separate permissions, and end-of-day revenue reports in cedis. The marketing site shows you the product working before you ever book a demo.',
+    role: "My company. I designed the product, built it, and I'm the one selling it.",
     stack: ['Next.js', 'React', 'Tailwind CSS', 'Vercel'],
     aiTools: ['Claude', 'ChatGPT', 'Bolt.new'],
     outcome:
-      'A live SaaS product with a dedicated app (app.aurumpms.com), role-based access for hotel staff, and a 20-minute walkthrough sales funnel.',
-    highlights: ['Live production app', 'Role-based staff access', 'GHS daily reporting'],
+      'Live in production at app.aurumpms.com, with role-based access for hotel staff and a 20-minute walkthrough funnel doing the selling.',
+    highlights: ['Live production app', 'Role-based staff access', 'Daily reports in GHS'],
   },
   {
     id: 'abcardgames',
@@ -54,14 +54,14 @@ export const projects = [
     mobileShot: shotMobile('https://www.abcardgames.com'),
     fallback: 'https://www.abcardgames.com/logo.jpg',
     problem:
-      'Ghana’s first locally developed card game company needed a storefront and brand home that could sell five product editions, tell the company story, and convert social traffic into WhatsApp orders.',
+      "Ghana had never produced its own card games. We made one in five editions, and it needed a storefront that could sell the decks, tell the company's story, and turn Instagram traffic into orders.",
     solution:
-      'A product-led brand site: edition catalogue with sample cards and pricing, WhatsApp commerce integration, press coverage, an SDG impact section, and a public roadmap.',
-    role: 'Co-founder & product builder — brand system, site design, build, and commerce flow.',
+      'A product-led brand site: five editions with sample cards and prices from GHS 150 to 450, one-tap WhatsApp ordering, the press coverage, and a public roadmap that runs through 2027.',
+    role: 'Co-founder. I built the brand system, the site, and the commerce flow.',
     stack: ['HTML/CSS/JS', 'WhatsApp Business API', 'TypeScript (inventory system)'],
     aiTools: ['Claude', 'ChatGPT', 'Canva AI'],
     outcome:
-      'Covered by MyJoyOnline and GhanaWeb as Ghana’s first locally created card games; selected into the Création Africa Ghana Top 30 incubation programme. Five editions selling via the site.',
+      "MyJoyOnline and GhanaWeb covered the launch as Ghana's first locally created card games. The company made the Création Africa Ghana Top 30. All five editions sell through the site.",
     highlights: ['National press coverage', 'Création Africa Top 30', '5 editions live'],
   },
   {
@@ -74,15 +74,15 @@ export const projects = [
     mobileShot: shotMobile('https://diaryforlawyers.com'),
     fallback: 'https://diaryforlawyers.lovable.app/lovable-uploads/7e73e732-98f9-48fe-9452-db5564d19d05.png',
     problem:
-      'Legal professionals carry heavy confidential stress with nowhere safe to process it — journaling apps aren’t built for their privacy needs or their profession.',
+      "Lawyers carry confidential stress they can't post about and often can't even talk about. Generic journaling apps weren't built for that.",
     solution:
-      'A private, anonymous journaling platform designed for lawyers, with AI-generated reflections tailored to the legal profession. Free to try, no email required.',
-    role: 'Product builder — concept, UX, AI integration design, and launch. Built as a digital companion to the Diary of a Ghanaian Lawyer podcast.',
+      'A private, anonymous journal for legal professionals. You write; GPT-4 responds with reflections tuned to the profession. Free to try, no email required.',
+    role: 'Concept, UX, and the AI integration design. It extends the Diary of a Ghanaian Lawyer podcast into software.',
     stack: ['React', 'TypeScript', 'Supabase', 'Lovable'],
     aiTools: ['GPT-4 (in-product)', 'Claude', 'Lovable AI'],
     outcome:
-      'A live AI product where the AI is the core feature, not a garnish — anonymous entries receive profession-aware reflections. Extends a podcast brand into software.',
-    highlights: ['GPT-4 powered reflections', 'Anonymous by design', 'Podcast-to-product extension'],
+      "A live AI product where the AI is the product, not a feature bolted on. Anonymous entries come back with profession-aware reflections.",
+    highlights: ['GPT-4 powered reflections', 'Anonymous by design', 'Podcast brand, extended into software'],
   },
   {
     id: 'smallgiants',
@@ -94,15 +94,15 @@ export const projects = [
     mobileShot: shotMobile('https://small-giants-mu.vercel.app'),
     fallback: 'https://small-giants-mu.vercel.app/opengraph-image.png',
     problem:
-      'Applying for a Content & Growth role at a media-education startup where a CV proves nothing — the role demands research, writing, design, and AI-assisted shipping.',
+      "I wanted a Content & Growth role at a media startup where a CV proves nothing. The job is research, writing, design, and shipping with AI in the loop. So the application had to be all four.",
     solution:
-      'Instead of a resume, a full product: an editorial site mapping the company’s vision, a founder operating system, a five-agent AI content engine, a build-in-public timeline, and an eight-week execution plan — with the build process itself documented as the case study.',
-    role: 'Everything — research, strategy, narrative architecture, design system, development, and copy.',
+      "Instead of a resume, a product: the company's vision mapped as a nine-section editorial site, a five-agent content engine, a build-in-public timeline, and an eight-week plan for 200+ pieces of content. The build process is documented on the page itself.",
+    role: 'All of it. Research, strategy, narrative structure, design, code, and copy.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
     aiTools: ['Claude', 'ChatGPT'],
     outcome:
-      'Weeks of desk research compressed into an afternoon; a complete, polished product shipped solo. The site argues its own case: this is what AI-assisted execution looks like.',
-    highlights: ['Research → shipped, solo', 'Self-documenting build', 'AI-in-the-loop end to end'],
+      'Weeks of desk research compressed into an afternoon, and a finished product shipped solo. The site makes its own argument: this is what AI-assisted execution looks like.',
+    highlights: ['Researched, designed, shipped solo', 'The build is the case study', 'AI in the loop, end to end'],
   },
   {
     id: 'patna',
@@ -114,14 +114,14 @@ export const projects = [
     mobileShot: shotMobile('https://patna.dev'),
     fallback: 'https://patna.dev/lovable-uploads/a381fd1c-a9a7-4faa-9339-09934ad04f6c.png',
     problem:
-      'Developers, designers, and founders struggle to find collaborators — good ideas stall because the right partner never shows up.',
+      'Good projects die because the right collaborator never shows up. Finding a technical partner still runs mostly on luck.',
     solution:
-      'A swipe-to-match platform for tech collaboration: profiles and project ideas are swipeable, and connections only happen when both sides opt in. Installable as a progressive web app.',
-    role: 'Product builder — concept, UX, matching flow design, build, and deployment.',
+      'Patna borrows the swipe. Profiles and project ideas are swipeable, and a connection only happens when both sides opt in. It installs as an app straight from the browser.',
+    role: 'Concept, UX, the matching flow, build, and deployment.',
     stack: ['React', 'TypeScript', 'Supabase', 'PWA', 'Lovable'],
     aiTools: ['Claude', 'Lovable AI', 'ChatGPT'],
     outcome:
-      'A live installable app with mutual-interest matching, project browsing, and network building for the tech community.',
-    highlights: ['Mutual-match mechanic', 'Installable PWA', 'Live at patna.dev'],
+      'Live at patna.dev as an installable app, matching developers, designers, and founders on mutual interest.',
+    highlights: ['Both sides must say yes', 'Installs from the browser', 'Live at patna.dev'],
   },
 ]

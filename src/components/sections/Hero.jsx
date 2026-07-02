@@ -26,9 +26,9 @@ export default function Hero() {
         </Reveal>
         <Reveal delay={80}>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-            I&rsquo;m Evans Odoi — AI product builder, communication professional, and digital
-            experience designer. I use AI, design, and software engineering to ship digital
-            products, websites, and communication systems with speed, clarity, and craft.
+            I&rsquo;m Evans Odoi, an AI product builder and communication professional in Accra.
+            I use AI, design, and software engineering to ship digital products, websites, and
+            communication systems. Six of them are live on this page; click through and check.
           </p>
         </Reveal>
         <Reveal delay={120}>

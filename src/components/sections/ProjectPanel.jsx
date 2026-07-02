@@ -76,7 +76,7 @@ export default function ProjectPanel({ projects, index, onClose, onNav }) {
         tabIndex={-1}
         role="dialog"
         aria-modal="true"
-        aria-label={`${p.name} — case study`}
+        aria-label={`${p.name} case study`}
         style={EASE}
         className={`theme-smooth absolute inset-y-0 right-0 flex w-full flex-col border-l border-line/10 bg-bg transition-transform sm:max-w-2xl lg:max-w-3xl ${
           shown ? 'translate-x-0' : 'translate-x-full'
@@ -119,9 +119,9 @@ export default function ProjectPanel({ projects, index, onClose, onNav }) {
         {/* Scrollable body */}
         <div ref={scrollRef} className="flex-1 overflow-y-auto overscroll-contain px-5 py-6 sm:px-8">
           <div className="relative">
-            <BrowserFrame src={p.desktopShot} fallback={p.fallback} alt={`${p.name} — desktop view`} url={p.url} />
+            <BrowserFrame src={p.desktopShot} fallback={p.fallback} alt={`${p.name}, desktop view`} url={p.url} />
             <div className="absolute -bottom-4 -right-2 hidden w-[26%] sm:block">
-              <PhoneFrame src={p.mobileShot} fallback={p.fallback} alt={`${p.name} — mobile view`} />
+              <PhoneFrame src={p.mobileShot} fallback={p.fallback} alt={`${p.name}, mobile view`} />
             </div>
           </div>
 

@@ -8,7 +8,7 @@ export default function Workflow() {
       <SectionHeading
         kicker="AI workflow"
         title="One pipeline, idea to market."
-        lede="Every product moves through the same system. AI accelerates each stage; judgement decides what ships."
+        lede="Every product moves through the same pipeline. AI speeds up each stage; judgement decides what ships."
       />
       <Reveal>
         <ol className="grid gap-px overflow-hidden rounded-xl border border-line/10 bg-line/10 sm:grid-cols-2 lg:grid-cols-5">

@@ -4,19 +4,19 @@ export const podcast = {
   host: 'Fredericka Amfo Boakye-Duah, Esq.',
   stats: { subscribers: '7.1K', videos: '83', topEpisode: '30K+' },
   positioning:
-    'A podcast that breaks down Ghana’s legal system in a simple, engaging, relatable way — real cases, legal rights, business law, and criminal justice, told through storytelling. Distributed across YouTube, Spotify, Podbean, Castbox, and Amazon Music.',
+    "A podcast that breaks down Ghana's legal system in plain language. Real cases, business law, and criminal justice, hosted by Fredericka Amfo Boakye-Duah and told as stories rather than statutes. It runs on YouTube, Spotify, Podbean, Castbox, and Amazon Music.",
   aiProduction: [
     {
-      title: 'Content strategy & positioning',
-      text: 'AI-assisted research into audience questions and legal topics shapes each episode’s angle, title, and description before recording.',
+      title: 'Strategy & positioning',
+      text: "Episode angles, titles, and descriptions start from AI research into what people actually ask about Ghanaian law.",
     },
     {
       title: 'Production pipeline',
-      text: 'Episode descriptions, chapter notes, and platform-specific copy are drafted with AI and human-edited, cutting post-production time per episode.',
+      text: 'Descriptions, chapter notes, and platform copy get drafted with AI and edited by hand. That cut hours off every episode.',
     },
     {
-      title: 'Multi-format distribution',
-      text: 'Each full episode is repurposed into Shorts, audiograms, and social posts — one recording, many surfaces, consistent brand.',
+      title: 'One recording, many formats',
+      text: 'Each full episode becomes Shorts, audiograms, and social posts. 83 videos on the channel so far, from one recording session at a time.',
     },
   ],
   episodes: [
@@ -24,19 +24,19 @@ export const podcast = {
       id: 'PrGGigF_e5k',
       title: 'How to Cross-Examine Like a Pro',
       views: '26K views · 21 min',
-      note: 'A full masterclass on cross-examination technique in Ghanaian courts',
+      note: 'A full masterclass on cross-examination in Ghanaian courts',
     },
     {
       id: '3lasJJsfNXw',
       title: 'How to Prepare for Trial',
       views: '12K views · 20 min',
-      note: 'The complete pre-trial preparation process, from case theory to court day',
+      note: 'The whole pre-trial process, from case theory to the morning of',
     },
     {
       id: 'NHwt-YtYFSc',
       title: "Ghana's Top Online Legal Educators",
       views: '4.7K views · 21 min',
-      note: 'A deep-dive episode on the people making Ghanaian law accessible online',
+      note: 'The people making Ghanaian law make sense online',
     },
   ],
 }
