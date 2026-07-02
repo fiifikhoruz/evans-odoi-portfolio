@@ -1,0 +1,40 @@
+import { useTheme } from './hooks/useTheme'
+import Navbar from './components/layout/Navbar'
+import Hero from './components/sections/Hero'
+import Projects from './components/sections/Projects'
+import Podcast from './components/sections/Podcast'
+import Presentations from './components/sections/Presentations'
+import GitHubSection from './components/sections/GitHubSection'
+import Capabilities from './components/sections/Capabilities'
+import Workflow from './components/sections/Workflow'
+import Stack from './components/sections/Stack'
+import Philosophy from './components/sections/Philosophy'
+import Footer from './components/layout/Footer'
+
+export default function App() {
+  const { theme, toggle } = useTheme()
+
+  return (
+    <>
+      <a
+        href="#work"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:text-white"
+      >
+        Skip to content
+      </a>
+      <Navbar theme={theme} toggle={toggle} />
+      <main>
+        <Hero />
+        <Projects />
+        <Podcast />
+        <Presentations />
+        <GitHubSection />
+        <Capabilities />
+        <Workflow />
+        <Stack />
+        <Philosophy />
+      </main>
+      <Footer />
+    </>
+  )
+}
