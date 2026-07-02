@@ -6,7 +6,7 @@ function Episode({ ep, featured }) {
   return (
     <Reveal
       as="article"
-      className="theme-smooth overflow-hidden rounded-xl border border-line/10 bg-surface transition-shadow duration-300 hover:shadow-lg hover:shadow-black/5"
+      className="theme-smooth overflow-hidden rounded-xl border border-line/10 bg-surface transition-shadow duration-150 hover:shadow-lg hover:shadow-black/5"
     >
       <div className="aspect-video w-full bg-raised">
         {featured ? (

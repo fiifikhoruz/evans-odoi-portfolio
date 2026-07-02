@@ -13,7 +13,7 @@ export default function Workflow() {
       <Reveal>
         <ol className="grid gap-px overflow-hidden rounded-xl border border-line/10 bg-line/10 sm:grid-cols-2 lg:grid-cols-5">
           {workflow.map((w, i) => (
-            <li key={w.step} className="theme-smooth group relative bg-surface p-5 transition-colors duration-300 hover:bg-raised">
+            <li key={w.step} className="theme-smooth group relative bg-surface p-5 transition-colors duration-150 hover:bg-raised">
               <span className="font-mono text-[11px] text-faint">{String(i + 1).padStart(2, '0')}</span>
               <h3 className="mt-1.5 flex items-center gap-1.5 text-sm font-semibold text-ink">
                 {w.step}

@@ -35,7 +35,7 @@ function ProjectCard({ p, index }) {
   return (
     <Reveal
       as="article"
-      className="theme-smooth overflow-hidden rounded-2xl border border-line/10 bg-surface transition-shadow duration-300 hover:shadow-lg hover:shadow-black/5"
+      className="theme-smooth overflow-hidden rounded-2xl border border-line/10 bg-surface transition-shadow duration-150 hover:shadow-lg hover:shadow-black/5"
     >
       <div className={`grid gap-8 p-6 sm:p-8 lg:grid-cols-2 lg:gap-12 ${flip ? 'lg:[&>div:first-child]:order-2' : ''}`}>
         {/* Mockups */}

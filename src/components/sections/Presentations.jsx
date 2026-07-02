@@ -37,9 +37,9 @@ export default function Presentations() {
         {presentations.map((deck, i) => (
           <Reveal
             key={deck.url}
-            delay={i * 60}
+            delay={i * 40}
             as="article"
-            className="theme-smooth group rounded-xl border border-line/10 bg-surface p-5 transition-shadow duration-300 hover:shadow-lg hover:shadow-black/5"
+            className="theme-smooth group rounded-xl border border-line/10 bg-surface p-5 transition-shadow duration-150 hover:shadow-lg hover:shadow-black/5"
           >
             <SlidePreview title={deck.title} />
             <div className="mt-4 flex items-start justify-between gap-4">

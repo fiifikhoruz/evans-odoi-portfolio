@@ -19,9 +19,9 @@
 
 .dark {
   /* dark (primary) */
-  --c-bg: 11 12 14;         /* deep charcoal, not #000 */
-  --c-surface: 19 21 24;
-  --c-raised: 26 29 33;
+  --c-bg: 11 15 20;         /* deep charcoal, not #000 */
+  --c-surface: 17 22 29;
+  --c-raised: 23 29 37;
   --c-ink: 231 233 236;     /* soft off-white */
   --c-muted: 155 161 169;
   --c-faint: 108 114 122;
@@ -29,9 +29,6 @@
   --c-line: 255 255 255;    /* used at low alpha */
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -43,12 +40,12 @@ html {
 
 body {
   @apply bg-bg text-ink font-sans antialiased;
-  transition: background-color 300ms ease, color 300ms ease;
+  transition: background-color 200ms ease, color 200ms ease;
 }
 
 /* Smooth theme transition on common surfaces */
 .theme-smooth {
-  transition: background-color 300ms ease, border-color 300ms ease, color 300ms ease;
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease;
 }
 
 ::selection {
@@ -65,9 +62,9 @@ body {
 /* Scroll reveal */
 .reveal {
   opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 600ms cubic-bezier(0.22, 1, 0.36, 1),
-    transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translateY(8px);
+  transition: opacity 380ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 380ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 .reveal.is-visible {
   opacity: 1;

@@ -17,21 +17,21 @@ export default function Hero() {
             Accra, Ghana · Building with AI since day one
           </p>
         </Reveal>
-        <Reveal delay={80}>
+        <Reveal delay={40}>
           <h1 className="max-w-3xl text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl md:text-6xl">
             Real products. Real systems.
             <br />
             <span className="text-muted">Built with AI, shipped for business.</span>
           </h1>
         </Reveal>
-        <Reveal delay={160}>
+        <Reveal delay={80}>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
             I&rsquo;m Evans Odoi — AI product builder, communication professional, and digital
             experience designer. I use AI, design, and software engineering to ship digital
             products, websites, and communication systems with speed, clarity, and craft.
           </p>
         </Reveal>
-        <Reveal delay={240}>
+        <Reveal delay={120}>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="#work"
@@ -47,7 +47,7 @@ export default function Hero() {
             </a>
           </div>
         </Reveal>
-        <Reveal delay={320}>
+        <Reveal delay={160}>
           <dl className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line/10 bg-line/10 sm:grid-cols-4">
             {proof.map((p) => (
               <div key={p.label} className="theme-smooth bg-surface px-5 py-5">

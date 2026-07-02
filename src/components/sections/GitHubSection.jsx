@@ -3,11 +3,11 @@ import { Section, SectionHeading } from '../ui/Section'
 import Reveal from '../ui/Reveal'
 
 const langDot = {
-  Vue: 'bg-emerald-500/70',
-  JavaScript: 'bg-yellow-500/70',
-  TypeScript: 'bg-sky-500/70',
-  Ruby: 'bg-red-500/70',
-  Web: 'bg-purple-500/70',
+  Vue: 'bg-accent/70',
+  JavaScript: 'bg-accent/70',
+  TypeScript: 'bg-accent/70',
+  Ruby: 'bg-accent/70',
+  Web: 'bg-accent/70',
 }
 
 export default function GitHubSection() {
@@ -76,9 +76,9 @@ export default function GitHubSection() {
           {github.repos.map((r, i) => (
             <Reveal
               key={r.name}
-              delay={i * 50}
+              delay={i * 30}
               as="article"
-              className="theme-smooth rounded-xl border border-line/10 bg-surface p-5 transition-colors duration-300 hover:border-line/25"
+              className="theme-smooth rounded-xl border border-line/10 bg-surface p-5 transition-colors duration-150 hover:border-line/25"
             >
               <a
                 href={`${github.url}/${r.name}`}

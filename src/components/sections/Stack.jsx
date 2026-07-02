@@ -19,7 +19,7 @@ export default function Stack() {
       <Reveal>
         <ul className="grid gap-px overflow-hidden rounded-xl border border-line/10 bg-line/10 sm:grid-cols-2 lg:grid-cols-5">
           {stack.map((t) => (
-            <li key={t.name} className="theme-smooth bg-surface p-5 transition-colors duration-300 hover:bg-raised">
+            <li key={t.name} className="theme-smooth bg-surface p-5 transition-colors duration-150 hover:bg-raised">
               <h3 className="text-sm font-semibold text-ink">{t.name}</h3>
               <p className="mt-1 text-xs leading-relaxed text-muted">{t.role}</p>
               <p className={`mt-3 text-[11px] font-medium uppercase tracking-wider ${levelStyle[t.level]}`}>
