@@ -51,7 +51,7 @@ export default function Navbar({ theme, toggle }) {
           ))}
           <a
             href="#contact"
-            className="ml-2 rounded-lg bg-accent px-3.5 py-2 text-sm font-medium text-onaccent transition-opacity hover:opacity-90"
+            className="ml-2 rounded-lg bg-btn px-3.5 py-2 text-sm font-medium text-btntext transition-opacity hover:opacity-90"
           >
             Contact
           </a>

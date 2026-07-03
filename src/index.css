@@ -16,6 +16,8 @@
   --c-accent: 154 116 40;   /* muted gold, dark enough for light mode */
   --c-line: 22 25 29;       /* used at low alpha */
   --c-onaccent: 24 18 6;    /* near-black text on gold */
+  --c-btn: 24 26 30;        /* light mode: ink buttons, white text */
+  --c-btntext: 255 255 255;
 }
 
 .dark {
@@ -29,6 +31,8 @@
   --c-accent: 205 166 82;   /* muted gold */
   --c-line: 255 255 255;    /* used at low alpha */
   --c-onaccent: 24 18 6;    /* near-black text on gold */
+  --c-btn: 205 166 82;      /* dark mode: gold buttons, dark text */
+  --c-btntext: 24 18 6;
 }
 
 

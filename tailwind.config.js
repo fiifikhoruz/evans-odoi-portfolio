@@ -13,6 +13,8 @@ export default {
         faint: 'rgb(var(--c-faint) / <alpha-value>)',
         accent: 'rgb(var(--c-accent) / <alpha-value>)',
         onaccent: 'rgb(var(--c-onaccent) / <alpha-value>)',
+        btn: 'rgb(var(--c-btn) / <alpha-value>)',
+        btntext: 'rgb(var(--c-btntext) / <alpha-value>)',
         line: 'rgb(var(--c-line) / <alpha-value>)',
       },
       fontFamily: {
