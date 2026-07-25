@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ArrowRight } from '@phosphor-icons/react'
 import { projects } from '../../data/projects'
 import { podcast } from '../../data/podcast'
 import { presentations } from '../../data/presentations'
@@ -34,7 +35,7 @@ function Card({ thumb, category, name, tagline, onOpen }) {
           aria-hidden="true"
           className="theme-smooth mt-1 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line/10 bg-raised text-muted transition-transform duration-150 group-hover:translate-x-0.5 group-hover:text-ink"
         >
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14m-6-6 6 6-6 6" /></svg>
+          <ArrowRight size={13} weight="bold" aria-hidden="true" />
         </span>
       </div>
       <span className="spot-layer" aria-hidden="true" />

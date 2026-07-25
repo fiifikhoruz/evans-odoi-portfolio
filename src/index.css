@@ -3,38 +3,21 @@
 @tailwind utilities;
 
 /* ---------------------------------------------
-   Design tokens: dark mode first
+   Design tokens: fixed navy blue theme
    --------------------------------------------- */
 :root {
-  /* light (secondary) */
-  --c-bg: 246 247 248;      /* soft light grey */
-  --c-surface: 255 255 255; /* clean white cards */
-  --c-raised: 250 250 251;
-  --c-ink: 24 26 30;        /* near-black, not pure */
-  --c-muted: 90 97 107;
-  --c-faint: 138 145 155;
-  --c-accent: 154 116 40;   /* muted gold, dark enough for light mode */
-  --c-line: 22 25 29;       /* used at low alpha */
-  --c-onaccent: 24 18 6;    /* near-black text on gold */
-  --c-btn: 24 26 30;        /* light mode: ink buttons, white text */
+  --c-bg: 12 26 56;         /* #0C1A38, rich navy: reads as blue, not black */
+  --c-surface: 18 36 74;    /* #12244A */
+  --c-raised: 25 48 96;     /* #193060 */
+  --c-ink: 246 249 255;     /* legible near-white */
+  --c-muted: 176 193 227;   /* #B0C1E3 */
+  --c-faint: 132 150 187;   /* #8496BB */
+  --c-accent: 100 150 255;  /* #6496FF bright azure: kickers, links, donut */
+  --c-line: 255 255 255;    /* used at low alpha over navy */
+  --c-onaccent: 255 255 255;
+  --c-btn: 37 99 235;       /* #2563EB, button fill: passes contrast with white text */
   --c-btntext: 255 255 255;
 }
-
-.dark {
-  /* dark (primary) */
-  --c-bg: 11 15 20;         /* deep charcoal, not #000 */
-  --c-surface: 17 22 29;
-  --c-raised: 23 29 37;
-  --c-ink: 231 233 236;     /* soft off-white */
-  --c-muted: 155 161 169;
-  --c-faint: 108 114 122;
-  --c-accent: 205 166 82;   /* muted gold */
-  --c-line: 255 255 255;    /* used at low alpha */
-  --c-onaccent: 24 18 6;    /* near-black text on gold */
-  --c-btn: 205 166 82;      /* dark mode: gold buttons, dark text */
-  --c-btntext: 24 18 6;
-}
-
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -107,7 +90,7 @@ body {
     transparent 65%
   );
 }
-.dark .spot-card:hover .spot-layer { opacity: 1; }
+.spot-card:hover .spot-layer { opacity: 1; }
 
 .tilt-card {
   transform: perspective(900px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));

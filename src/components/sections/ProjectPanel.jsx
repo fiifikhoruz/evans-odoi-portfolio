@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { CaretLeft, CaretRight, X, ArrowUpRight } from '@phosphor-icons/react'
 import { BrowserFrame, PhoneFrame } from '../ui/DeviceFrames'
 
 function Meta({ label, children }) {
@@ -95,7 +96,7 @@ export default function ProjectPanel({ projects, index, onClose, onNav }) {
               aria-label="Previous project"
               className="theme-smooth inline-flex h-9 w-9 items-center justify-center rounded-lg border border-line/10 bg-surface text-muted transition-colors duration-150 hover:text-ink"
             >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6" /></svg>
+              <CaretLeft size={14} weight="bold" aria-hidden="true" />
             </button>
             <button
               type="button"
@@ -103,7 +104,7 @@ export default function ProjectPanel({ projects, index, onClose, onNav }) {
               aria-label="Next project"
               className="theme-smooth inline-flex h-9 w-9 items-center justify-center rounded-lg border border-line/10 bg-surface text-muted transition-colors duration-150 hover:text-ink"
             >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg>
+              <CaretRight size={14} weight="bold" aria-hidden="true" />
             </button>
             <button
               type="button"
@@ -111,7 +112,7 @@ export default function ProjectPanel({ projects, index, onClose, onNav }) {
               aria-label="Close case study"
               className="theme-smooth ml-1 inline-flex h-9 w-9 items-center justify-center rounded-lg border border-line/10 bg-surface text-muted transition-colors duration-150 hover:text-ink"
             >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+              <X size={14} weight="bold" aria-hidden="true" />
             </button>
           </div>
         </header>
@@ -155,7 +156,7 @@ export default function ProjectPanel({ projects, index, onClose, onNav }) {
               className="inline-flex items-center gap-1.5 rounded-lg bg-btn px-4 py-2 text-sm font-medium text-btntext transition-opacity duration-150 hover:opacity-90"
             >
               Visit live site
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
+              <ArrowUpRight size={13} weight="bold" aria-hidden="true" />
             </a>
             <a
               href="https://github.com/fiifikhoruz"

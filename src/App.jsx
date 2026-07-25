@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import { useTheme } from './hooks/useTheme'
 import Navbar from './components/layout/Navbar'
 import Hero from './components/sections/Hero'
 import Projects from './components/sections/Projects'
@@ -7,8 +6,6 @@ import Capabilities from './components/sections/Capabilities'
 import Footer from './components/layout/Footer'
 
 export default function App() {
-  const { theme, toggle } = useTheme()
-
   useEffect(() => {
     const onClick = (e) => {
       const a = e.target.closest('a[href^="#"]')
@@ -32,7 +29,7 @@ export default function App() {
       >
         Skip to content
       </a>
-      <Navbar theme={theme} toggle={toggle} />
+      <Navbar />
       <main>
         <Hero />
         <Projects />

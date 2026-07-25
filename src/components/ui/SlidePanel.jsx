@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { X } from '@phosphor-icons/react'
 
 const EASE = { transitionTimingFunction: 'cubic-bezier(0.32, 0.72, 0, 1)', transitionDuration: '280ms' }
 
@@ -57,7 +58,7 @@ export default function SlidePanel({ label, title, onClose, children }) {
             aria-label="Close"
             className="theme-smooth inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-line/10 bg-surface text-muted transition-colors duration-150 hover:text-ink"
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+            <X size={14} weight="bold" aria-hidden="true" />
           </button>
         </header>
         <div className="flex-1 overflow-y-auto overscroll-contain px-5 py-6 sm:px-8">{children}</div>
