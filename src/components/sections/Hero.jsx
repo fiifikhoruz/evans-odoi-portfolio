@@ -10,7 +10,7 @@ const proof = [
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden px-5 pb-20 pt-20 sm:px-8 sm:pt-28">
+    <section id="top" className="theme-blue theme-smooth relative overflow-hidden bg-bg px-5 pb-20 pt-20 sm:px-8 sm:pt-28">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 top-0 h-[440px] bg-[radial-gradient(640px_circle_at_28%_-12%,rgb(var(--c-accent)/0.09),transparent_62%)]"
@@ -23,10 +23,10 @@ export default function Hero() {
           </p>
         </Reveal>
         <Reveal delay={40}>
-          <h1 className="max-w-3xl text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl md:text-6xl">
+          <h1 className="max-w-3xl text-5xl font-extrabold leading-[1.05] tracking-tighter text-ink sm:text-6xl md:text-7xl">
             Real products.
             <br />
-            <span className="text-muted">Built with AI for business.</span>
+            Built with AI for business.
           </h1>
         </Reveal>
         <Reveal delay={80}>

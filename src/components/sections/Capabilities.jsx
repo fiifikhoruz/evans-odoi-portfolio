@@ -21,7 +21,7 @@ export default function Capabilities() {
   const c = capabilities[sel]
 
   return (
-    <Section id="capabilities" className="py-20">
+    <Section id="capabilities" theme="dark" className="py-20">
       <SectionHeading
         kicker="AI capabilities"
         title="Nine capabilities, one system."

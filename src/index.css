@@ -3,19 +3,66 @@
 @tailwind utilities;
 
 /* ---------------------------------------------
-   Design tokens: fixed navy blue theme
+   Design tokens: chapters (blue / white / dark / gray)
    --------------------------------------------- */
-:root {
-  --c-bg: 12 26 56;         /* #0C1A38, rich navy: reads as blue, not black */
-  --c-surface: 18 36 74;    /* #12244A */
-  --c-raised: 25 48 96;     /* #193060 */
-  --c-ink: 246 249 255;     /* legible near-white */
-  --c-muted: 176 193 227;   /* #B0C1E3 */
-  --c-faint: 132 150 187;   /* #8496BB */
-  --c-accent: 100 150 255;  /* #6496FF bright azure: kickers, links, donut */
-  --c-line: 255 255 255;    /* used at low alpha over navy */
+:root,
+.theme-white {
+  /* chapter: white, the neutral default (Work section, and page fallback) */
+  --c-bg: 240 242 245;      /* #F0F2F5, off-white page background */
+  --c-surface: 255 255 255; /* pure white cards */
+  --c-raised: 228 230 235;  /* #E4E6EB, hover/secondary surface */
+  --c-ink: 28 30 33;        /* #1C1E21, near-black legible text */
+  --c-muted: 101 103 107;   /* #65676B secondary text */
+  --c-faint: 138 141 145;   /* #8A8D91 */
+  --c-accent: 24 119 242;   /* #1877F2, the one recognizable blue */
+  --c-line: 28 30 33;       /* used at low alpha for borders */
   --c-onaccent: 255 255 255;
-  --c-btn: 37 99 235;       /* #2563EB, button fill: passes contrast with white text */
+  --c-btn: 24 119 242;      /* same blue: one brand color, used consistently */
+  --c-btntext: 255 255 255;
+}
+
+.theme-blue {
+  /* chapter: blue hero band */
+  --c-bg: 24 119 242;       /* #1877F2, the brand blue as a full band */
+  --c-surface: 45 133 247;  /* #2D85F7, lighter card tint */
+  --c-raised: 66 147 250;   /* #4293FA, hover/avatar ring */
+  --c-ink: 255 255 255;     /* white: maximum legibility on blue */
+  --c-muted: 219 232 255;   /* #DBE8FF soft light blue */
+  --c-faint: 179 205 250;   /* #B3CDFA */
+  --c-accent: 255 255 255;  /* white pops as the accent here */
+  --c-line: 255 255 255;    /* white borders at low alpha */
+  --c-onaccent: 24 119 242;
+  --c-btn: 13 15 20;        /* near-black pill, like Apple's hero CTA */
+  --c-btntext: 255 255 255;
+}
+
+.theme-dark {
+  /* chapter: dark band, the mid-page contrast beat */
+  --c-bg: 6 10 18;          /* #060A12, near-black with a blue cast */
+  --c-surface: 17 24 36;    /* #111824 */
+  --c-raised: 24 32 48;     /* #182030 */
+  --c-ink: 245 247 250;     /* near-white */
+  --c-muted: 165 174 190;   /* #A5AEBE */
+  --c-faint: 118 128 148;   /* #768094 */
+  --c-accent: 91 163 255;   /* #5BA3FF, brighter blue: pops on black */
+  --c-line: 255 255 255;    /* white borders at low alpha */
+  --c-onaccent: 6 10 18;
+  --c-btn: 255 255 255;     /* white pill on black */
+  --c-btntext: 6 10 18;
+}
+
+.theme-gray {
+  /* chapter: light gray close, matches the white chapter with a softer edge */
+  --c-bg: 244 245 247;      /* #F4F5F7 */
+  --c-surface: 255 255 255;
+  --c-raised: 233 235 239;  /* #E9EBEF */
+  --c-ink: 28 30 33;
+  --c-muted: 101 103 107;
+  --c-faint: 138 141 145;
+  --c-accent: 24 119 242;
+  --c-line: 28 30 33;
+  --c-onaccent: 255 255 255;
+  --c-btn: 24 119 242;
   --c-btntext: 255 255 255;
 }
 

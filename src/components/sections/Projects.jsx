@@ -124,7 +124,7 @@ export default function Projects() {
   const [open, setOpen] = useState(null)
 
   return (
-    <Section id="work" className="py-20">
+    <Section id="work" theme="white" className="py-20">
       <SectionHeading
         kicker="The work"
         title="Products shipped, not promised."

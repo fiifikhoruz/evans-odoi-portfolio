@@ -1,8 +1,8 @@
 import Reveal from './Reveal'
 
-export function Section({ id, className = '', children }) {
+export function Section({ id, className = '', theme = 'white', children }) {
   return (
-    <section id={id} className={`scroll-mt-24 px-5 sm:px-8 ${className}`}>
+    <section id={id} className={`theme-${theme} theme-smooth scroll-mt-24 bg-bg px-5 sm:px-8 ${className}`}>
       <div className="mx-auto max-w-content">{children}</div>
     </section>
   )
