@@ -23,7 +23,7 @@ export default function Capabilities() {
   return (
     <Section id="capabilities" theme="dark" className="py-20">
       <SectionHeading
-        kicker="AI capabilities"
+        kicker="Product capabilities"
         title="Nine capabilities, one system."
         lede="Tap a segment. Every capability comes with proof: a real project that shipped."
       />

@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { X } from '@phosphor-icons/react'
+import { useDialogA11y } from '../../hooks/useDialogA11y'
 
 const EASE = { transitionTimingFunction: 'cubic-bezier(0.32, 0.72, 0, 1)', transitionDuration: '280ms' }
 
@@ -7,26 +8,18 @@ export default function SlidePanel({ label, title, onClose, children }) {
   const [shown, setShown] = useState(false)
   const panelRef = useRef(null)
 
-  const close = () => {
+  const close = useCallback(() => {
     setShown(false)
     setTimeout(onClose, 280)
-  }
+  }, [onClose])
+
+  useDialogA11y(panelRef, close)
 
   useEffect(() => {
     const raf = requestAnimationFrame(() => setShown(true))
-    const prev = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
-    panelRef.current?.focus()
-    const onKey = (e) => {
-      if (e.key === 'Escape') close()
-    }
-    window.addEventListener('keydown', onKey)
     return () => {
       cancelAnimationFrame(raf)
-      document.body.style.overflow = prev
-      window.removeEventListener('keydown', onKey)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
@@ -41,7 +34,7 @@ export default function SlidePanel({ label, title, onClose, children }) {
         tabIndex={-1}
         role="dialog"
         aria-modal="true"
-        aria-label={title}
+        aria-labelledby="feature-panel-title"
         style={EASE}
         className={`theme-smooth absolute inset-y-0 right-0 flex w-full flex-col border-l border-line/10 bg-bg transition-transform sm:max-w-2xl lg:max-w-3xl ${
           shown ? 'translate-x-0' : 'translate-x-full'
@@ -49,8 +42,8 @@ export default function SlidePanel({ label, title, onClose, children }) {
       >
         <header className="theme-smooth flex items-center justify-between gap-3 border-b border-line/10 bg-bg px-5 py-3.5 sm:px-8">
           <div className="min-w-0">
-            <p className="truncate text-[11px] font-semibold uppercase tracking-[0.14em] text-accent">{label}</p>
-            <h3 className="truncate text-base font-semibold text-ink">{title}</h3>
+            <p className="truncate text-xs font-semibold uppercase tracking-[0.14em] text-accent">{label}</p>
+            <h3 id="feature-panel-title" className="truncate text-base font-semibold text-ink">{title}</h3>
           </div>
           <button
             type="button"

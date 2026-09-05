@@ -4,7 +4,7 @@ import { projects } from '../../data/projects'
 const proof = [
   { value: '6', label: 'Products live in production' },
   { value: '83', label: 'Podcast episodes shipped' },
-  { value: '4+', label: 'Brands & systems built' },
+  { value: '2,000+', label: 'Bank clients onboarded yearly' },
   { value: '2', label: 'Companies co-founded' },
 ]
 
@@ -19,7 +19,7 @@ export default function Hero() {
         <Reveal>
           <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-line/10 bg-surface px-3.5 py-1.5 text-xs font-medium text-muted theme-smooth">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
-            Accra, Ghana · Building with AI since day one
+            Accra, Ghana · Product strategy, design and delivery
           </p>
         </Reveal>
         <Reveal delay={40}>
@@ -31,9 +31,9 @@ export default function Hero() {
         </Reveal>
         <Reveal delay={80}>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-            I&rsquo;m Evans Odoi, an AI product builder and communication professional in Accra.
-            I use AI, design, and software engineering to ship digital products, websites, and
-            communication systems.
+            I&rsquo;m Evans Odoi, a product-focused builder and communication professional in Accra.
+            I turn business problems into useful digital products, from the first decision to a
+            live release. AI helps me move faster. Product judgement keeps the work useful.
           </p>
         </Reveal>
         <Reveal delay={120}>
@@ -48,7 +48,7 @@ export default function Hero() {
               href="#contact"
               className="theme-smooth rounded-lg border border-line/15 bg-surface px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-line/30"
             >
-              Get in touch
+              Work with me
             </a>
           </div>
         </Reveal>

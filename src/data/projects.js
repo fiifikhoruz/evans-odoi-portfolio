@@ -34,7 +34,7 @@ export const projects = [
     mobileShot: shotMobile('https://www.aurumpms.com'),
     fallback: null,
     problem:
-      "Most independent hotels in Ghana still run the front desk on paper. Bookings collide, housekeeping is guesswork, and the owner finds out what the day earned long after it's over.",
+      "Many independent hotels in Ghana still run critical front-desk work on paper or disconnected tools. Bookings collide, housekeeping updates arrive late, and owners struggle to see what the day earned.",
     solution:
       'Aurum is a full property management system: a live room board, guest check-in and check-out, staff roles with separate permissions, and end-of-day revenue reports in cedis. The marketing site shows you the product working before you ever book a demo.',
     role: "My company. I designed the product, built it, and I'm the one selling it.",
@@ -54,9 +54,9 @@ export const projects = [
     mobileShot: shotMobile('https://www.abcardgames.com'),
     fallback: 'https://www.abcardgames.com/logo.jpg',
     problem:
-      "Ghana had never produced its own card games. We made one in five editions, and it needed a storefront that could sell the decks, tell the company's story, and turn Instagram traffic into orders.",
+      "Locally sold party games often felt disconnected from how Ghanaians actually speak and socialise. We created five conversation-led editions and needed a storefront that could explain the range and turn social traffic into orders.",
     solution:
-      'A product-led brand site: five editions with sample cards and prices from GHS 150 to 450, one-tap WhatsApp ordering, the press coverage, and a public roadmap that runs through 2027.',
+      'A product-led brand site: five editions with sample cards and prices from GHS 150 to 450, one-tap WhatsApp ordering, press coverage and a public roadmap through 2027.',
     role: 'Co-founder. I built the brand system, the site, and the commerce flow.',
     stack: ['HTML/CSS/JS', 'WhatsApp Business API', 'TypeScript (inventory system)'],
     aiTools: ['Claude', 'ChatGPT', 'Canva AI'],
@@ -76,13 +76,13 @@ export const projects = [
     problem:
       "Lawyers carry confidential stress they can't post about and often can't even talk about. Generic journaling apps weren't built for that.",
     solution:
-      'A private, anonymous journal for legal professionals. You write; GPT-4 responds with reflections tuned to the profession. Free to try, no email required.',
-    role: 'Concept, UX, and the AI integration design. It extends the Diary of a Ghanaian Lawyer podcast into software.',
-    stack: ['React', 'TypeScript', 'Supabase', 'Lovable'],
-    aiTools: ['GPT-4 (in-product)', 'Claude', 'Lovable AI'],
+      'A private journal for legal professionals. Lawyers write in a protected account and receive AI reflections tuned to the pressures and language of the profession.',
+    role: 'Concept, UX and AI integration design. I also led the production security and authentication readiness work that took it from prototype to a safer live product.',
+    stack: ['React', 'TypeScript', 'Supabase', 'Vercel'],
+    aiTools: ['AI reflections (in-product)', 'Claude', 'Lovable AI'],
     outcome:
-      "A live AI product where the AI is the product, not a feature bolted on. Anonymous entries come back with profession-aware reflections.",
-    highlights: ['GPT-4 powered reflections', 'Anonymous by design', 'Podcast brand, extended into software'],
+      "A live AI product with private accounts, protected journal data and profession-aware reflections. The experience now supports production authentication and recovery flows.",
+    highlights: ['Profession-aware AI reflections', 'Private journal data', 'Production authentication flows'],
   },
   {
     id: 'smallgiants',

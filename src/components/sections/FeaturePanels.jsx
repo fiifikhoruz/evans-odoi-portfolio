@@ -43,7 +43,7 @@ export function PodcastPanel({ onClose }) {
         ].map(([v, l]) => (
           <div key={l} className="theme-smooth bg-surface px-4 py-3.5">
             <p className="text-lg font-semibold tracking-tight text-ink">{v}</p>
-            <p className="mt-0.5 text-[11px] text-faint">{l}</p>
+            <p className="mt-0.5 text-xs text-faint">{l}</p>
           </div>
         ))}
       </div>
@@ -151,7 +151,7 @@ export function CodePanel({ onClose }) {
         </div>
         <ul className="mt-2.5 flex flex-wrap gap-x-4 gap-y-1">
           {langMix.map((l) => (
-            <li key={l.lang} className="flex items-center gap-1.5 text-[11px] text-faint">
+            <li key={l.lang} className="flex items-center gap-1.5 text-xs text-faint">
               <span className={`h-1.5 w-1.5 rounded-full ${l.cls}`} aria-hidden="true" />
               {l.lang}
             </li>
@@ -170,7 +170,7 @@ export function CodePanel({ onClose }) {
           >
             <p className="text-sm font-semibold text-ink">{r.name}</p>
             <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-muted">{r.desc}</p>
-            <p className="mt-2.5 flex items-center gap-1.5 text-[11px] text-faint">
+            <p className="mt-2.5 flex items-center gap-1.5 text-xs text-faint">
               <span className="h-1.5 w-1.5 rounded-full bg-accent/60" aria-hidden="true" />
               {r.lang}
             </p>
@@ -191,7 +191,7 @@ export function SystemPanel({ onClose }) {
       <ol className="space-y-2">
         {workflow.map((w, i) => (
           <li key={w.step} className="theme-smooth flex items-baseline gap-3 rounded-lg border border-line/10 bg-surface px-4 py-3">
-            <span className="font-mono text-[11px] text-faint">{String(i + 1).padStart(2, '0')}</span>
+            <span className="font-mono text-xs text-faint">{String(i + 1).padStart(2, '0')}</span>
             <span className="text-sm font-semibold text-ink">{w.step}</span>
             <span className="ml-auto hidden text-xs text-muted sm:block">{w.text}</span>
           </li>

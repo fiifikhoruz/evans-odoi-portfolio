@@ -27,7 +27,7 @@ function Card({ thumb, category, name, tagline, onOpen }) {
       </div>
       <div className="mt-4 flex items-start justify-between gap-3">
         <div className="min-w-0">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-accent">{category}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">{category}</p>
           <h3 className="mt-1 truncate text-base font-semibold text-ink">{name}</h3>
           <p className="mt-0.5 line-clamp-2 text-sm leading-snug text-muted">{tagline}</p>
         </div>
@@ -84,7 +84,7 @@ const features = [
         {presentations.map((d) => (
           <span key={d.url} className="theme-smooth flex flex-col justify-between rounded-md border border-line/10 bg-bg p-2">
             <i className="block h-0.5 w-5 rounded-full bg-accent/70" aria-hidden="true" />
-            <span className="line-clamp-1 text-[9px] font-medium text-faint">{d.tag}</span>
+            <span className="line-clamp-1 text-xs font-medium text-faint">{d.tag}</span>
           </span>
         ))}
       </div>
@@ -111,7 +111,7 @@ const features = [
     thumb: (
       <div className="grid h-full grid-cols-5 content-center gap-1.5 p-4">
         {workflow.map((w, i) => (
-          <span key={w.step} className="theme-smooth rounded-md border border-line/10 bg-bg py-1.5 text-center font-mono text-[9px] text-faint">
+          <span key={w.step} className="theme-smooth rounded-md border border-line/10 bg-bg py-1.5 text-center font-mono text-xs text-faint">
             {String(i + 1).padStart(2, '0')}
           </span>
         ))}
@@ -133,7 +133,7 @@ export default function Projects() {
 
       <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p, i) => (
-          <li key={p.id} className="sticky sm:static" style={{ top: `${84 + i * 10}px` }}>
+          <li key={p.id}>
             <Reveal delay={(i % 3) * 40}>
               <Card
                 thumb={<ShotThumb p={p} />}
@@ -146,7 +146,7 @@ export default function Projects() {
           </li>
         ))}
         {features.map((f, i) => (
-          <li key={f.key} className="sticky sm:static" style={{ top: `${84 + (projects.length + i) * 10}px` }}>
+          <li key={f.key}>
             <Reveal delay={(i % 3) * 40}>
               <Card
                 thumb={f.thumb}

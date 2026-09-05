@@ -1,16 +1,16 @@
 export const capabilities = [
   {
-    title: 'AI Product Development',
+    title: 'Product Development',
     text: 'Taking a product from idea to production with AI in the loop the whole way: scoping, building, testing, shipping.',
     example: 'Aurum PMS: a hotel management SaaS designed, built, and launched solo.',
   },
   {
-    title: 'Prompt Engineering',
-    text: 'Structured prompts and multi-step workflows that produce output you can actually ship.',
+    title: 'AI Workflow Design',
+    text: 'Structured prompts, context and multi-step workflows that produce output you can actually ship.',
     example: 'Diary for Lawyers: GPT-4 reflection prompts tuned for legal journaling.',
   },
   {
-    title: 'Website Building with AI',
+    title: 'Web Product Delivery',
     text: 'Complete, fast marketing sites and web apps in days rather than months.',
     example: 'AFROSON1C X: a festival platform with three live application funnels.',
   },
@@ -25,12 +25,12 @@ export const capabilities = [
     example: 'AB Card Games: a brand in the national press within weeks of launch.',
   },
   {
-    title: 'AI Content Creation',
+    title: 'Content Systems',
     text: 'Research-backed content pipelines where AI drafts and a human makes the call.',
     example: "Titles, descriptions, and platform copy for 83 podcast videos.",
   },
   {
-    title: 'AI Video Production',
+    title: 'Media Production',
     text: 'Long recordings cut into shorts, audiograms, and platform-native formats.',
     example: 'One podcast recording becomes YouTube, Shorts, and social, every week.',
   },
@@ -49,7 +49,7 @@ export const capabilities = [
 export const workflow = [
   { step: 'Idea', text: 'Define the problem and who it serves' },
   { step: 'Research', text: 'AI-accelerated market and audience research' },
-  { step: 'Prompting', text: 'Structured prompts and context engineering' },
+  { step: 'AI workflow', text: 'Structured prompts and context engineering' },
   { step: 'Planning', text: 'Scope, architecture, and milestones' },
   { step: 'Design', text: 'Design system, hierarchy, and flows' },
   { step: 'Development', text: 'AI-paired build with human judgement' },
