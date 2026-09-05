@@ -3,6 +3,7 @@ import { List, X } from '@phosphor-icons/react'
 
 const links = [
   { href: '#work', label: 'Work' },
+  { href: '#experience', label: 'Experience' },
   { href: '#capabilities', label: 'Capabilities' },
 ]
 

@@ -29,7 +29,7 @@ export function BrowserFrame({ src, fallback, alt, url }) {
           <i className="h-2.5 w-2.5 rounded-full bg-line/20" />
         </span>
         {url && (
-          <span className="theme-smooth ml-2 truncate rounded-md bg-bg px-2.5 py-1 font-mono text-[11px] text-faint">
+          <span className="theme-smooth ml-2 truncate rounded-md bg-bg px-2.5 py-1 font-mono text-xs text-faint">
             {url.replace(/^https?:\/\//, '')}
           </span>
         )}

@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { CaretLeft, CaretRight, X, ArrowUpRight } from '@phosphor-icons/react'
 import { BrowserFrame, PhoneFrame } from '../ui/DeviceFrames'
+import { useDialogA11y } from '../../hooks/useDialogA11y'
 
 function Meta({ label, children }) {
   return (
@@ -34,32 +35,28 @@ export default function ProjectPanel({ projects, index, onClose, onNav }) {
   const panelRef = useRef(null)
   const scrollRef = useRef(null)
 
-  const close = () => {
+  const close = useCallback(() => {
     setShown(false)
     setTimeout(onClose, 280)
-  }
+  }, [onClose])
+
+  useDialogA11y(panelRef, close)
 
   useEffect(() => {
     const raf = requestAnimationFrame(() => setShown(true))
-    const prev = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
-    panelRef.current?.focus()
     return () => {
       cancelAnimationFrame(raf)
-      document.body.style.overflow = prev
     }
   }, [])
 
   useEffect(() => {
     const onKey = (e) => {
-      if (e.key === 'Escape') close()
       if (e.key === 'ArrowRight') onNav(1)
       if (e.key === 'ArrowLeft') onNav(-1)
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [onNav])
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: 0 })
@@ -77,7 +74,7 @@ export default function ProjectPanel({ projects, index, onClose, onNav }) {
         tabIndex={-1}
         role="dialog"
         aria-modal="true"
-        aria-label={`${p.name} case study`}
+        aria-labelledby="project-panel-title"
         style={EASE}
         className={`theme-smooth absolute inset-y-0 right-0 flex w-full flex-col border-l border-line/10 bg-bg transition-transform sm:max-w-2xl lg:max-w-3xl ${
           shown ? 'translate-x-0' : 'translate-x-full'
@@ -86,8 +83,8 @@ export default function ProjectPanel({ projects, index, onClose, onNav }) {
         {/* Header */}
         <header className="theme-smooth flex items-center justify-between gap-3 border-b border-line/10 bg-bg px-5 py-3.5 sm:px-8">
           <div className="min-w-0">
-            <p className="truncate text-[11px] font-semibold uppercase tracking-[0.14em] text-accent">{p.category}</p>
-            <h3 className="truncate text-base font-semibold text-ink">{p.name}</h3>
+            <p className="truncate text-xs font-semibold uppercase tracking-[0.14em] text-accent">{p.category}</p>
+            <h3 id="project-panel-title" className="truncate text-base font-semibold text-ink">{p.name}</h3>
           </div>
           <div className="flex shrink-0 items-center gap-1.5">
             <button

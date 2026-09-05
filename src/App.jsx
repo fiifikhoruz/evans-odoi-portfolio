@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import Navbar from './components/layout/Navbar'
 import Hero from './components/sections/Hero'
 import Projects from './components/sections/Projects'
+import Experience from './components/sections/Experience'
 import Capabilities from './components/sections/Capabilities'
 import Footer from './components/layout/Footer'
 
@@ -33,6 +34,7 @@ export default function App() {
       <main>
         <Hero />
         <Projects />
+        <Experience />
         <Capabilities />
       </main>
       <Footer />
