@@ -24,9 +24,9 @@ export default function Hero() {
         </Reveal>
         <Reveal delay={40}>
           <h1 className="max-w-3xl text-5xl font-extrabold leading-[1.05] tracking-tighter text-ink sm:text-6xl md:text-7xl">
-            Messy problems.
+            Real products.
             <br />
-            Working products.
+            Built with AI for business.
           </h1>
         </Reveal>
         <Reveal delay={80}>
