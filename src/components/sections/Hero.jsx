@@ -2,7 +2,7 @@ import Reveal from '../ui/Reveal'
 import { projects } from '../../data/projects'
 
 const proof = [
-  { value: '6', label: 'Products live in production' },
+  { value: '7', label: 'Products live in production' },
   { value: '83', label: 'Podcast episodes shipped' },
   { value: '2,000+', label: 'Bank clients onboarded yearly' },
   { value: '2', label: 'Companies co-founded' },
@@ -66,7 +66,7 @@ export default function Hero() {
               ))}
             </span>
             <span className="text-sm text-muted transition-colors duration-150 group-hover:text-ink">
-              6 live projects, see them all →
+              7 live projects, see them all →
             </span>
           </a>
         </Reveal>

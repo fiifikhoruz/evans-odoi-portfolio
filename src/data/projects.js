@@ -5,6 +5,26 @@ const shotMobile = (url) => `https://s0.wp.com/mshots/v1/${encodeURIComponent(ur
 
 export const projects = [
   {
+    id: 'youcancooktoo',
+    name: 'You Can Cook Too',
+    tagline: 'Cook Ghanaian food, live from your kitchen',
+    category: 'Virtual Class Booking',
+    url: 'https://youcancooktoo.vercel.app/',
+    desktopShot: shot('https://youcancooktoo.vercel.app/'),
+    mobileShot: shotMobile('https://youcancooktoo.vercel.app/'),
+    fallback: 'https://youcancooktoo.vercel.app/you-can-cook-too-logo.svg',
+    problem:
+      'Recipes can show ingredients and steps, but they cannot correct technique or answer questions in the moment. Berl needed a simple way to offer personal Ghanaian cooking lessons without turning every booking into a long message thread.',
+    solution:
+      'A mobile-first booking experience where visitors choose a dish, select an available date and time, share their details, and join a one-to-one class through Google Meet.',
+    role: 'I designed and built the full experience: product flow, brand direction, interface, booking journey and deployment.',
+    stack: ['Next.js', 'React', 'Tailwind CSS', 'Vercel'],
+    aiTools: ['Claude', 'ChatGPT'],
+    outcome:
+      'A live booking site for free 60-minute Ghanaian cooking sessions, with dish selection, scheduling and the virtual class handoff in one clear flow.',
+    highlights: ['One-to-one virtual classes', 'Flexible dish selection', 'Mobile-first booking flow'],
+  },
+  {
     id: 'afroson1cx',
     name: 'AFROSON1C X',
     tagline: 'Where West Africa meets the global music industry',

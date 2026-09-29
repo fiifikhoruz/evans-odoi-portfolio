@@ -128,7 +128,7 @@ export default function Projects() {
       <SectionHeading
         kicker="The work"
         title="Products shipped, not promised."
-        lede="Six live products, plus the podcast, the decks, the code, and the system behind them. Tap any card for the full story."
+        lede="Seven live products, plus the podcast, the decks, the code, and the system behind them. Tap any card for the full story."
       />
 
       <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
