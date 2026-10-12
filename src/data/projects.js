@@ -5,6 +5,26 @@ const shotMobile = (url) => `https://s0.wp.com/mshots/v1/${encodeURIComponent(ur
 
 export const projects = [
   {
+    id: 'ingressaccess',
+    name: 'Ingress Access',
+    tagline: 'Access, considered',
+    category: 'Access Solutions Website',
+    url: 'https://ingressaccess.com/',
+    desktopShot: shot('https://ingressaccess.com/'),
+    mobileShot: shotMobile('https://ingressaccess.com/'),
+    fallback: 'https://ingressaccess.com/assets/smart-1280.webp',
+    problem:
+      'Ingress Access Solutions needed a credible digital presence for a practical service business. Customers had to understand the product range quickly, see that installation was included, and reach the team without navigating a complicated sales process.',
+    solution:
+      'A focused service website for smart locks, hotel locks, access control systems, doors and accessories. Clear product categories, installation guidance and direct WhatsApp and phone actions move visitors from browsing to an enquiry.',
+    role: 'I shaped the digital direction and built the complete website: structure, interface, responsive experience, enquiry paths, domain setup and deployment.',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Vercel'],
+    aiTools: ['Claude', 'ChatGPT'],
+    outcome:
+      'A fast, mobile-first website that gives the Accra-based business a professional home online and turns each service page into a direct route to a quote.',
+    highlights: ['4 solution categories', 'WhatsApp enquiry flow', 'Sales and installation in Accra'],
+  },
+  {
     id: 'youcancooktoo',
     name: 'You Can Cook Too',
     tagline: 'Cook Ghanaian food, live from your kitchen',
